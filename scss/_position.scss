@@ -39,8 +39,9 @@ header .content {
 
 footer .content {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
+    min-height: 100px;
 }
 
 .header_contacts {
@@ -48,9 +49,25 @@ footer .content {
     text-align: right;
 }
 
-.header_menu li{
+.header_menu li {
     display: inline-block;
 }
+
+header a {
+    text-decoration: none;
+}
+
+header .navig {
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.tow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     div {
         display: flex;
         justify-content: center;
