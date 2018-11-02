@@ -28,22 +28,132 @@ footer {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
+.content {
+  max-width: 1230px;
+  margin: auto;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.navig {
+  max-width: 100%;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 header .content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 120px; }
+
+footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .header_contacts {
+  max-width: 185px;
   text-align: right; }
 
 .header_menu li {
   display: inline-block; }
 
+header a {
+  text-decoration: none; }
+
+header .navig {
+  min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.tow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tow div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
 header {
-  min-height: 120px; }
+  min-height: 120px;
+  background-color: #fefefe; }
+
+footer {
+  min-height: 100px;
+  background-color: #202320; }
 
 .header_logo {
-  min-width: 276px; }
+  min-width: 276px;
+  height: 100%; }
+
+.header_menu {
+  max-width: 570px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .header_menu a {
+    color: #515151;
+    font-size: 18px;
+    line-height: 60px;
+    font-family: Arsenal; }
+  .header_menu a:hover {
+    color: #000056;
+    border-bottom: 1px solid rgba(0, 0, 56, 0.15); }
+
+.phone {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arsenal; }
+
+.mail {
+  color: #000056;
+  font-family: Arsenal;
+  font-size: 18px; }
+
+.callback {
+  background: transparent;
+  border: transparent;
+  outline: none;
+  color: #000000;
+  font-size: 14px; }
+  .callback:hover {
+    border-bottom: 1px solid rgba(187, 187, 187, 0.31); }
 
 .phone_ico {
   display: inline-block;
@@ -51,5 +161,58 @@ header {
   width: 26px;
   height: 26px;
   background: url(../img/phone-call.png); }
+
+.navig {
+  background-color: #000054; }
+  .navig nav {
+    color: white;
+    font-size: 12px; }
+  .navig span:nth-child(odd) {
+    font-family: "Arsenal - Regular";
+    border-bottom: 1px solid #fefefe; }
+  .navig span:nth-child(even) {
+    font-family: MyriadPro;
+    font-weight: 400; }
+  .navig a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fefefe; }
+
+.rights {
+  color: #656565;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px; }
+
+h2 {
+  text-align: center;
+  color: #515151;
+  font-family: Arsenal;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39.21px;
+  text-transform: uppercase;
+  padding: 50px 0; }
+
+.tow div {
+  width: 270px;
+  height: 300px;
+  background-color: #f6f6f6; }
+
+@font-face {
+  font-family: 'Arsenal';
+  src: url("../fonts/ArsenalRegular.woff") format("woff"), url("../fonts/ArsenalRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: 'Arsenal';
+  src: url("../fonts/ArsenalBold.woff") format("woff"), url("../fonts/ArsenalBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */

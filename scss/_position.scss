@@ -17,14 +17,43 @@ footer {
     flex: 0 0 auto;
 }
 
-header .content{
-    display: flex;
+.content {
+    max-width: 1230px;
+    margin: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
 }
 
-.header_contacts{
+.navig {
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+}
+
+footer .content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header_contacts {
+    max-width: 185px;
     text-align: right;
 }
 
 .header_menu li{
     display: inline-block;
+}
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
