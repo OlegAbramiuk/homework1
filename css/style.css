@@ -267,7 +267,8 @@ h2 {
   line-height: 27px;
   padding: 19px 21px 0 22px; }
   [class*="ware"] nav:hover {
-    color: #000056; }
+    color: #000056;
+    cursor: default; }
   [class*="ware"] nav a {
     text-decoration: none;
     color: #000056; }

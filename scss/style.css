@@ -21,13 +21,18 @@ footer {
 .content {
   max-width: 1230px;
   margin: auto;
-  padding: 0 30px;
-  box-sizing: border-box; }
+  padding: 0 30px; }
 
 .navig {
   max-width: 100%;
   margin: auto;
   box-sizing: border-box; }
+  .navig nav {
+    display: flex; }
+  .navig .content {
+    display: flex;
+    min-height: 30px;
+    align-items: center; }
 
 header .content {
   display: flex;
@@ -41,33 +46,40 @@ footer .content {
   justify-content: space-between;
   min-height: 100px; }
 
-.header_contacts {
-  max-width: 185px;
-  text-align: right; }
-
-.header_menu li {
-  display: inline-block; }
-
-header a {
-  text-decoration: none; }
-
-header .navig {
-  min-height: 30px;
+.header_menu {
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .header_menu li {
+    display: inline-block; }
 
-.tow {
+.phone_ico {
+  display: inline-block;
+  vertical-align: middle; }
+
+span {
+  display: block; }
+
+.tow1,
+.tow2 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-  .tow div {
+  justify-content: space-between;
+  align-items: flex-start; }
+  .tow1 div,
+  .tow2 div {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .tow1 [class*="ware"],
+  .tow2 [class*="ware"] {
+    display: flex;
+    flex-direction: column; }
 
 header {
   min-height: 120px;
   background-color: #fefefe; }
+  header a {
+    text-decoration: none; }
 
 footer {
   min-height: 100px;
@@ -79,10 +91,7 @@ footer {
 
 .header_menu {
   max-width: 570px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  width: 100%; }
   .header_menu a {
     color: #515151;
     font-size: 18px;
@@ -91,6 +100,10 @@ footer {
   .header_menu a:hover {
     color: #000056;
     border-bottom: 1px solid rgba(0, 0, 56, 0.15); }
+
+.header_contacts {
+  max-width: 185px;
+  text-align: right; }
 
 .phone {
   color: #000000;
@@ -113,8 +126,6 @@ footer {
     border-bottom: 1px solid rgba(187, 187, 187, 0.31); }
 
 .phone_ico {
-  display: inline-block;
-  vertical-align: middle;
   width: 26px;
   height: 26px;
   background: url(../img/phone-call.png); }
@@ -125,12 +136,13 @@ footer {
     color: white;
     font-size: 12px; }
   .navig span:nth-child(odd) {
-    font-family: "Arsenal - Regular";
-    border-bottom: 1px solid #fefefe; }
+    font-family: Arsenal; }
   .navig span:nth-child(even) {
     font-family: MyriadPro;
-    font-weight: 400; }
+    font-weight: 400;
+    padding: 0 3px; }
   .navig a {
+    border-bottom: 1px solid #fefefe;
     text-decoration: none;
     font-size: 12px;
     color: #fefefe; }
@@ -150,12 +162,75 @@ h2 {
   font-weight: 700;
   line-height: 39.21px;
   text-transform: uppercase;
-  padding: 50px 0; }
+  padding: 50px 0 38px 0; }
 
-.tow div {
+.text h1 {
+  color: #515151;
+  font-family: Arsenal;
+  text-transform: uppercase;
+  padding: 48px 0 24px 0; }
+.text h2 {
+  text-align: left;
+  color: #515151;
+  font-family: Arsenal;
+  text-transform: uppercase;
+  padding: 0 0 24px 0; }
+.text span {
+  color: #515151;
+  font-family: Arsenal;
+  line-height: 24px;
+  padding-bottom: 24px; }
+  .text span:last-of-type {
+    padding-bottom: 100px; }
+  .text span a {
+    color: #000056;
+    border-bottom: 1px solid #173b71; }
+.text h3 {
+  font-family: Arsenal;
+  color: #515151;
+  padding-bottom: 24px;
+  text-transform: uppercase; }
+.text h4 {
+  font-family: Arsenal;
+  color: #515151;
+  padding-bottom: 24px; }
+.text ul {
+  padding-left: 39px;
+  padding-bottom: 24px; }
+  .text ul li {
+    color: #173b71; }
+  .text ul li nav {
+    font-family: Arsenal;
+    color: #515151; }
+
+[class*="ware"] div {
   width: 270px;
   height: 300px;
   background-color: #f6f6f6; }
+[class*="ware"] nav {
+  max-width: 270px;
+  color: #515151;
+  font-family: Arsenal;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  padding: 19px 21px 0 22px; }
+  [class*="ware"] nav:hover {
+    color: #000056; }
+  [class*="ware"] nav a {
+    text-decoration: none;
+    color: #000056; }
+  [class*="ware"] nav span:last-of-type {
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(23, 59, 113, 0.15);
+    width: 118px; }
+
+.tow1 {
+  padding-bottom: 50px; }
+
+.tow2 {
+  border-bottom: 1px solid rgba(81, 81, 81, 0.1);
+  padding-bottom: 48px; }
 
 @font-face {
   font-family: 'Arsenal';
