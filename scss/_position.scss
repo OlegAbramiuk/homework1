@@ -21,13 +21,22 @@ footer {
     max-width: 1230px;
     margin: auto;
     padding: 0 30px;
-    box-sizing: border-box;
 }
 
 .navig {
     max-width: 100%;
     margin: auto;
     box-sizing: border-box;
+
+    nav {
+        display: flex;
+    }
+
+    .content {
+        display: flex;
+        min-height: 30px;
+        align-items: center;
+    }
 }
 
 header .content {
@@ -44,33 +53,41 @@ footer .content {
     min-height: 100px;
 }
 
-.header_contacts {
-    max-width: 185px;
-    text-align: right;
-}
 
-.header_menu li {
-    display: inline-block;
-}
 
-header a {
-    text-decoration: none;
-}
-
-header .navig {
-    min-height: 30px;
+.header_menu {
     display: flex;
-    align-items: center;
-}
-
-.tow {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.phone_ico {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+span {
+    display: block;
+}
+
+.tow1,
+.tow2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 
     div {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    [class*="ware"] {
+        display: flex;
+        flex-direction: column;
     }
 }
