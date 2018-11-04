@@ -266,16 +266,16 @@ h2 {
   font-weight: 700;
   line-height: 27px;
   padding: 19px 21px 0 22px; }
-  [class*="ware"] nav:hover {
-    color: #000056;
-    cursor: default; }
-  [class*="ware"] nav a {
-    text-decoration: none;
-    color: #000056; }
-  [class*="ware"] nav span:last-of-type {
-    padding-top: 20px;
-    border-bottom: 1px solid rgba(23, 59, 113, 0.15);
-    width: 118px; }
+[class*="ware"] a {
+  text-decoration: none;
+  color: #000056; }
+[class*="ware"] span:hover {
+  color: #000056;
+  cursor: default; }
+[class*="ware"] span:last-of-type {
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(23, 59, 113, 0.15);
+  width: 118px; }
 
 .tow1 {
   padding-bottom: 50px; }
